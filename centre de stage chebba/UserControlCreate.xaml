@@ -60,7 +60,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx8" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -76,7 +76,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx11" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -91,7 +91,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx4" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -106,7 +106,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="tx40" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -122,7 +122,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx41" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -136,7 +136,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx42" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -168,7 +168,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx20" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -184,7 +184,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx21" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -199,7 +199,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx44" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -229,7 +229,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx28" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -245,7 +245,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx29" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -276,7 +276,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx23" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -318,7 +318,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="tx13" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -348,7 +348,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="textBox1" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -377,7 +377,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx18" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -408,7 +408,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx15" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -422,7 +422,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx16" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -436,7 +436,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx17" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -466,7 +466,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx30" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -480,7 +480,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx45" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -494,7 +494,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx33" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -535,7 +535,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="textBox10" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -565,7 +565,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx50" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -594,7 +594,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="tx14" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -623,7 +623,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="tx19" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -654,7 +654,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx24" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -668,7 +668,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox  x:Name="tx26" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
@@ -682,7 +682,7 @@
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                         <ColumnDefinition Width="*"></ColumnDefinition>
                                     </Grid.ColumnDefinitions>
-                                    <TextBox Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
+                                    <TextBox x:Name="tx27" Grid.Column="0" Style="{StaticResource MaterialDesignTextBox}"
                                              VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0">
                                     </TextBox>
                                     <TextBlock Grid.Column="1" Style="{StaticResource MaterialDesignBody1TextBlock}"
