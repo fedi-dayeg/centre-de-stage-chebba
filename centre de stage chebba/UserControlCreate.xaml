@@ -12,7 +12,7 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        mc:Ignorable="d"  Height="584" Width="1010"
+        mc:Ignorable="d"  Height="585.333" Width="1010"
         >
     <materialDesign:Card HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <materialDesign:Card.Background>
@@ -517,6 +517,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>   
                     </Grid.RowDefinitions>
 
                     <GroupBox Grid.Row="0"
@@ -692,6 +693,14 @@
                             </StackPanel>
                         </Grid>
                     </GroupBox>
+                    
+                    <Grid Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,25,0,0" >
+                        <Button Style="{StaticResource MaterialDesignIconButton}" ToolTip="MaterialDesignIconButton" Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" Click="Button_Click">
+                            <materialDesign:PackIcon Kind="Printer" x:Name="button1" />
+                        </Button>
+
+                    </Grid>
+
 
                 </Grid>
             </UniformGrid>

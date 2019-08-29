@@ -8,7 +8,7 @@
         xmlns:Viewer="clr-namespace:SAPBusinessObjects.WPF.Viewer;assembly=SAPBusinessObjects.WPF.Viewer" x:Class="centre_de_stage_chebba.Window1"
         
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800" Closed="Window_Closed">
+        Title="Window1" Height="450" Width="800" >
     <Grid>
 
 

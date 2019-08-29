@@ -24,9 +24,6 @@ namespace centre_de_stage_chebba
             InitializeComponent();
         }
 
-        private void Window_Closed(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
+     
     }
 }

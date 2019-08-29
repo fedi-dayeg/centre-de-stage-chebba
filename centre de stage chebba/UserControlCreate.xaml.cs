@@ -35,9 +35,9 @@ namespace centre_de_stage_chebba
             ReportDocument doc = new ReportDocument();
             try
             {
-                // doc.Load($"../../CrystalReport2.rpt");
-                string reportPath = System.IO.Path.Combine(Environment.CurrentDirectory, "CrystalReport2.rpt");
-                doc.Load(reportPath);
+                 doc.Load($"../../CrystalReport2.rpt");
+               // string reportPath = System.IO.Path.Combine(Environment.CurrentDirectory, "CrystalReport2.rpt");
+               // doc.Load(reportPath);
             }
             catch (Exception e)
             {
@@ -113,6 +113,11 @@ namespace centre_de_stage_chebba
             text37.Text = tx50.Text;
             text38.Text = textBox1.Text;
             f2.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            CrystalReportText();
         }
     }
 }
