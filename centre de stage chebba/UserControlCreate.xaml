@@ -12,7 +12,7 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        mc:Ignorable="d"  Height="585.333" Width="1010"
+        mc:Ignorable="d"  Height="655" Width="1010"
         >
     <materialDesign:Card HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <materialDesign:Card.Background>
@@ -22,17 +22,107 @@
             </LinearGradientBrush>
         </materialDesign:Card.Background>
         <Grid>
+
             <!-- definion de grid pour toute la forme -->
             <Grid.ColumnDefinitions>
+                
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="35*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Grid.ColumnSpan="3">
+                <Menu
+                    IsMainMenu="True">
+                    <MenuItem
+                        Header="_File">
+                        <MenuItem
+                            Header="Save">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="ContentSave" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            Header="Save As.." />
+                        <MenuItem
+                            Header="Exit"
+                            InputGestureText="Ctrl+E">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="ExitToApp" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem
+                            Header="Excellent"
+                            IsCheckable="True"
+                            IsChecked="True" />
+                        <MenuItem
+                            Header="Rubbish"
+                            IsCheckable="True" />
+                        <MenuItem
+                            Header="Dig Deeper"
+                            InputGestureText="Ctrl+D">
+                            <MenuItem
+                                Header="Enlightenment?"
+                                IsCheckable="True" />
+                            <MenuItem
+                                Header="Disappointment"
+                                IsCheckable="True" />
+                        </MenuItem>
+                        <MenuItem
+                            Header="Look Deeper"
+                            InputGestureText="Ctrl+D">
+                            <MenuItem
+                                Header="Plain" />
+                            <MenuItem
+                                Header="Ice Cream" />
+                        </MenuItem>
+                    </MenuItem>
+                    <MenuItem
+                        Header="_Edit">
+                        <MenuItem
+                            Header="_Cut"
+                            Command="Cut">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="ContentCut" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            Header="_Copy"
+                            Command="Copy">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="ContentCopy" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem
+                            Header="_Paste"
+                            Command="Paste">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="ContentPaste" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </Menu>
+            </Grid>
+ 
+
+
             <!-- difintion du 1 ere uniformGrid -->
-            <UniformGrid Columns="1" Grid.Column="0" Margin="0,0,5,0">
+            <UniformGrid Grid.Row="1" Columns="1" Grid.Column="0" Margin="0,0,5,0" Grid.RowSpan="2">
+
                 <Grid>
                     <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -151,7 +241,7 @@
                     <!-- 2 eme groupBox -->
 
 
-                    <GroupBox Grid.Row="2"
+                    <GroupBox Grid.Row="1"
 
                               Style="{StaticResource MaterialDesignGroupBox}"
                               materialDesign:ShadowAssist.ShadowDepth="Depth5"
@@ -213,7 +303,7 @@
 
                     <!-- 3eme groupBox -->
 
-                    <GroupBox Grid.Row="3"
+                    <GroupBox Grid.Row="2"
 
                               Style="{StaticResource MaterialDesignGroupBox}"
                               materialDesign:ShadowAssist.ShadowDepth="Depth5"
@@ -261,7 +351,7 @@
                     <!-- 4 eme groupBox -->
 
 
-                    <GroupBox Grid.Row="4"
+                    <GroupBox Grid.Row="3"
 
                               Style="{StaticResource MaterialDesignGroupBox}"
                               materialDesign:ShadowAssist.ShadowDepth="Depth5"
@@ -292,7 +382,7 @@
 
 
             <!-- 2 eme uniformGrid -->
-            <UniformGrid Columns="1" Grid.Column="1" Margin="0,0,5,0">
+            <UniformGrid Grid.Row="1" Columns="1" Grid.Column="1" Margin="0,0,5,0" Grid.RowSpan="2">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -509,7 +599,7 @@
             </UniformGrid>
 
             <!-- 3 eme uniformGrid -->
-            <UniformGrid Columns="1" Grid.Column="2" Margin="0,0,5,0">
+            <UniformGrid Grid.Row="1" Columns="1" Grid.Column="2" Margin="0,0,5,0" Grid.RowSpan="2">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"></RowDefinition>
@@ -517,7 +607,7 @@
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
                         <RowDefinition Height="Auto"></RowDefinition>
-                        <RowDefinition Height="Auto"></RowDefinition>   
+                        <RowDefinition Height="Auto"></RowDefinition>
                     </Grid.RowDefinitions>
 
                     <GroupBox Grid.Row="0"
@@ -693,7 +783,7 @@
                             </StackPanel>
                         </Grid>
                     </GroupBox>
-                    
+
                     <Grid Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,25,0,0" >
                         <Button Style="{StaticResource MaterialDesignIconButton}" ToolTip="MaterialDesignIconButton" Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" Click="Button_Click">
                             <materialDesign:PackIcon Kind="Printer" x:Name="button1" />
