@@ -36,6 +36,7 @@
                 <RowDefinition Height="35*"/>
             </Grid.RowDefinitions>
 
+            <!-- creation de la Menu -->
             <Grid Grid.Row="0" Grid.ColumnSpan="3">
                 <Menu Background="DimGray"
                     IsMainMenu="True">
@@ -114,10 +115,10 @@
                     </MenuItem>
                 </Menu>
             </Grid>
- 
 
+            
 
-            <!-- difintion du 1 ere uniformGrid -->
+                <!-- difintion du 1 ere uniformGrid -->
             <UniformGrid Grid.Row="1" Columns="1" Grid.Column="0" Margin="0,0,5,0" Grid.RowSpan="2">
 
                 <Grid>
@@ -795,5 +796,7 @@
                 </Grid>
             </UniformGrid>
         </Grid>
+        
+     
     </materialDesign:Card>
 </UserControl>
