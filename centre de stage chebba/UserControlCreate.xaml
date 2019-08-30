@@ -32,17 +32,17 @@
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="3*"></RowDefinition>
+                <RowDefinition Height="2.3*"></RowDefinition>
                 <RowDefinition Height="35*"/>
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0" Grid.ColumnSpan="3">
-                <Menu
+                <Menu Background="DimGray"
                     IsMainMenu="True">
                     <MenuItem
                         Header="_File">
                         <MenuItem
-                            Header="Save">
+                            Header="Save" Click="btn_save">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon
                                     Kind="ContentSave" />

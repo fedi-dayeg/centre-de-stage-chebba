@@ -119,5 +119,10 @@ namespace centre_de_stage_chebba
         {
             CrystalReportText();
         }
+
+        private void btn_save(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("ok", "ok", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+        }
     }
 }
