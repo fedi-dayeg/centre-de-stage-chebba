@@ -12,7 +12,7 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        mc:Ignorable="d"  Height="655" Width="1010"
+        mc:Ignorable="d"  Height="625" Width="1010"
         >
     <materialDesign:Card HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <materialDesign:Card.Background>
@@ -32,7 +32,7 @@
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="2.3*"></RowDefinition>
+                <RowDefinition Height="2.5*"></RowDefinition>
                 <RowDefinition Height="35*"/>
             </Grid.RowDefinitions>
 
@@ -43,20 +43,26 @@
                     <MenuItem
                         Header="_File">
                         <MenuItem
-                            Header="Save" Click="btn_save">
+                            Header="تسجيل" Click="btn_save">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon
                                     Kind="ContentSave" />
                             </MenuItem.Icon>
                         </MenuItem>
                         <MenuItem
-                            Header="Save As.." />
+                            Header="طباعة" Click="Button_Click">
+                            <MenuItem.Icon>
+                                <materialDesign:PackIcon
+                                    Kind="Printer">
+                                </materialDesign:PackIcon>
+                            </MenuItem.Icon>
+                        </MenuItem>
                         <MenuItem
-                            Header="Exit"
+                            Header="بحث"
                             InputGestureText="Ctrl+E">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon
-                                    Kind="ExitToApp" />
+                                    Kind="Search" />
                             </MenuItem.Icon>
                         </MenuItem>
                         <Separator />
@@ -785,12 +791,12 @@
                         </Grid>
                     </GroupBox>
 
-                    <Grid Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,25,0,0" >
-                        <Button Style="{StaticResource MaterialDesignIconButton}" ToolTip="MaterialDesignIconButton" Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" Click="Button_Click">
+                    <!--<Grid Grid.Row="5" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,25,0,0" >
+                        <Button Style="{StaticResource MaterialDesignIconButton}" ToolTip="MaterialDesignIconButton" Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" >
                             <materialDesign:PackIcon Kind="Printer" x:Name="button1" />
                         </Button>
 
-                    </Grid>
+                    </Grid> -->
 
 
                 </Grid>
