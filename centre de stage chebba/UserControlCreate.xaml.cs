@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using centre_de_stage_chebba.Model;
 using CrystalDecisions.CrystalReports.Engine;
 using SAPBusinessObjects.WPF.Viewer;
 
@@ -22,6 +24,9 @@ namespace centre_de_stage_chebba
     /// </summary>
     public partial class UserControlCreate : UserControl
     {
+        private static string connString = @"Data Source=""../centre.accdb"";
+Provider=""Microsoft.ACE.OLEDB.12.0""; 
+User ID=Admin";
         public UserControlCreate()
         {
             InitializeComponent();
@@ -122,7 +127,48 @@ namespace centre_de_stage_chebba
 
         private void btn_save(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("ok", "ok", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+            //MessageBox.Show("ok", "ok", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+
+
+            Connexion.AddOrdre("INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
+                    ",paimentValide,compteBancaire,sujetVersement," +
+                    "beneficeVers,compteBancaireVers,numOredeEchange,classe,lobe,parag," +
+                    "paragSecond,numVisa,prixTotale,negation,prixTotalePayer," +
+                    "arreterA,au,dans,benificeComptable,identBancaireComptable,ficheAppartient," +
+                    "lobeFiche,annesFinancier)values('" +
+                    int.Parse(textBox10.Text) + "','" + tx13.Text + "','" + tx50.Text + "','" + tx14.Text + "','" + tx18.Text +
+                    "','" + tx19.Text + "','" + tx23.Text + "','" + tx24.Text + "','" + tx26.Text + "','" + tx27.Text +
+                    "','" + tx8.Text + "','" + tx11.Text +
+                    "','" + tx4.Text + "','" + tx40.Text + "','" + tx41.Text + "','" + tx42.Text + "','" + tx15.Text + "','" +
+                    tx16.Text + "','" + tx17.Text + "','" + tx20.Text + "','" + tx21.Text + "','" + tx44.Text + "','" +
+                    tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
+                    "','" + tx33.Text + "')");
+
+           /* Ordre o = new Ordre(int.Parse(textBox10.Text), tx13.Text, tx50.Text, tx14.Text, tx18.Text, tx19.Text,
+                   tx23.Text, tx24.Text, tx26.Text, tx27.Text, tx8.Text, tx11.Text, tx4.Text, tx40.Text, tx41.Text,
+                   tx42.Text, tx15.Text, tx16.Text, tx17.Text, tx20.Text, tx21.Text, tx44.Text, tx28.Text, tx29.Text,
+                   tx30.Text, tx45.Text, tx33.Text);
+            OleDbConnection conn = new OleDbConnection(connString);
+            conn.Open();
+            string sql = "INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
+                    ",paimentValide,compteBancaire,sujetVersement," +
+                    "beneficeVers,compteBancaireVers,numOredeEchange,classe,lobe,parag," +
+                    "paragSecond,numVisa,prixTotale,negation,prixTotalePayer," +
+                    "arreterA,au,dans,benificeComptable,identBancaireComptable,ficheAppartient," +
+                    "lobeFiche,annesFinancier)values('" +
+                    int.Parse(textBox10.Text) + "','" + tx13.Text + "','" + tx50.Text + "','" + tx14.Text + "','" + tx18.Text +
+                    "','" + tx19.Text + "','" + tx23.Text + "','" + tx24.Text + "','" + tx26.Text + "','" + tx27.Text +
+                    "','" + tx8.Text + "','" + tx11.Text +
+                    "','" + tx4.Text + "','" + tx40.Text + "','" + tx41.Text + "','" + tx42.Text + "','" + tx15.Text + "','" +
+                    tx16.Text + "','" + tx17.Text + "','" + tx20.Text + "','" + tx21.Text + "','" + tx44.Text + "','" +
+                    tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
+                    "','" + tx33.Text + "')";
+            OleDbCommand cmd = new OleDbCommand(sql, conn);
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            conn.Close();*/
+
+
         }
     }
 }
