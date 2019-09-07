@@ -127,9 +127,6 @@ User ID=Admin";
 
         private void btn_save(object sender, RoutedEventArgs e)
         {
-            //MessageBox.Show("ok", "ok", MessageBoxButton.OK, MessageBoxImage.Asterisk);
-
-
             Connexion.AddOrdre("INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
                     ",paimentValide,compteBancaire,sujetVersement," +
                     "beneficeVers,compteBancaireVers,numOredeEchange,classe,lobe,parag," +
@@ -142,33 +139,7 @@ User ID=Admin";
                     "','" + tx4.Text + "','" + tx40.Text + "','" + tx41.Text + "','" + tx42.Text + "','" + tx15.Text + "','" +
                     tx16.Text + "','" + tx17.Text + "','" + tx20.Text + "','" + tx21.Text + "','" + tx44.Text + "','" +
                     tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
-                    "','" + tx33.Text + "')");
-
-           /* Ordre o = new Ordre(int.Parse(textBox10.Text), tx13.Text, tx50.Text, tx14.Text, tx18.Text, tx19.Text,
-                   tx23.Text, tx24.Text, tx26.Text, tx27.Text, tx8.Text, tx11.Text, tx4.Text, tx40.Text, tx41.Text,
-                   tx42.Text, tx15.Text, tx16.Text, tx17.Text, tx20.Text, tx21.Text, tx44.Text, tx28.Text, tx29.Text,
-                   tx30.Text, tx45.Text, tx33.Text);
-            OleDbConnection conn = new OleDbConnection(connString);
-            conn.Open();
-            string sql = "INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
-                    ",paimentValide,compteBancaire,sujetVersement," +
-                    "beneficeVers,compteBancaireVers,numOredeEchange,classe,lobe,parag," +
-                    "paragSecond,numVisa,prixTotale,negation,prixTotalePayer," +
-                    "arreterA,au,dans,benificeComptable,identBancaireComptable,ficheAppartient," +
-                    "lobeFiche,annesFinancier)values('" +
-                    int.Parse(textBox10.Text) + "','" + tx13.Text + "','" + tx50.Text + "','" + tx14.Text + "','" + tx18.Text +
-                    "','" + tx19.Text + "','" + tx23.Text + "','" + tx24.Text + "','" + tx26.Text + "','" + tx27.Text +
-                    "','" + tx8.Text + "','" + tx11.Text +
-                    "','" + tx4.Text + "','" + tx40.Text + "','" + tx41.Text + "','" + tx42.Text + "','" + tx15.Text + "','" +
-                    tx16.Text + "','" + tx17.Text + "','" + tx20.Text + "','" + tx21.Text + "','" + tx44.Text + "','" +
-                    tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
-                    "','" + tx33.Text + "')";
-            OleDbCommand cmd = new OleDbCommand(sql, conn);
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            conn.Close();*/
-
-
+                    "','" + tx33.Text + "')");               
         }
     }
 }
