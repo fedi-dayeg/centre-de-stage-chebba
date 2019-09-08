@@ -58,7 +58,8 @@
                             </MenuItem.Icon>
                         </MenuItem>
                         <MenuItem
-                            Header="بحث"
+                            Header="بحث" Click="MenuItem_Click_1"
+                            
                             InputGestureText="Ctrl+E">
                             <MenuItem.Icon>
                                 <materialDesign:PackIcon

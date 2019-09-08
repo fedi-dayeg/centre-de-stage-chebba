@@ -41,8 +41,7 @@ User ID=Admin";
             try
             {
                  doc.Load($"../../CrystalReport2.rpt");
-               // string reportPath = System.IO.Path.Combine(Environment.CurrentDirectory, "CrystalReport2.rpt");
-               // doc.Load(reportPath);
+               
             }
             catch (Exception e)
             {
@@ -141,5 +140,15 @@ User ID=Admin";
                     tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
                     "','" + tx33.Text + "')");               
         }
+
+    
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            search search = new search();
+            search.Show();
+
+        }
     }
 }
+// string reportPath = System.IO.Path.Combine(Environment.CurrentDirectory, "CrystalReport2.rpt");
+// doc.Load(reportPath);

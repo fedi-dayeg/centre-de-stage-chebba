@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace centre_de_stage_chebba
 {
     /// <summary>
-    /// Logique d'interaction pour SearchControl.xaml
+    /// Logique d'interaction pour search.xaml
     /// </summary>
-    public partial class SearchControl : UserControl
+    public partial class search : Window
     {
-        public SearchControl()
+        public search()
         {
             InitializeComponent();
         }
-
-
-
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
             string sql = "SELECT* FROM ajouter";

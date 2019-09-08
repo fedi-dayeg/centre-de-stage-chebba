@@ -5,29 +5,15 @@ using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
+using System.Windows.Forms;
 using static centre_de_stage_chebba.CustomException;
 
 namespace centre_de_stage_chebba
 {
     class Connexion
     {
-       /* private static OleDbConnection GetNewConnection()
-        {
-            OleDbConnection oleDbConnection = new OleDbConnection();
-            oleDbConnection.ConnectionString = System.Configuration.ConfigurationManager.AppSettings["accessServerConnString"];
-
-            try
-            {
-                oleDbConnection.Open();
-            }
-            catch(Exception e)
-            {
-                oleDbConnection.Close();
-                throw new CustomException("Le système ne peut pas se connecter à la base de données. Veuillez contacter votre administrateur système.", ExceptionType.Error, "Error message:" + e.Message);
-            }
-            return oleDbConnection;
-            
-        }*/
+      
 
         private static string connString = @"Data Source=""../centre.accdb"";
 Provider=""Microsoft.ACE.OLEDB.12.0""; 
@@ -54,6 +40,19 @@ User ID=Admin";
             conn.Close();
         }
 
+        internal static void remplirDGV(System.Windows.Controls.DataGrid datagridview, string sql)
+        {
+            OleDbConnection conn = new OleDbConnection(connString);
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+            OleDbDataAdapter da = new OleDbDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            datagridview.ItemsSource = dt.DefaultView;
+            da.Dispose();
+            conn.Close();
+        }
+
         public void DbOpen()
         {
             conn.Open();
@@ -75,6 +74,13 @@ User ID=Admin";
                 throw new Exception(e.Message);
             }
         }
+
+        public static void remplirDGV(DataGridView dgv, string sql)
+        {
+            
+
+        }
+       
 
 
 

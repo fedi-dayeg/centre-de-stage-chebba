@@ -12,10 +12,12 @@
         TextOptions.TextRenderingMode="Auto"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        mc:Ignorable="d"  Height="625" Width="1010"
+        mc:Ignorable="d"  Height="625" Width="1010" Loaded="UserControl_Loaded"
              >
     <Grid>
         <DataGrid
+            x:Name="datagridview"
+            
   Margin="0 8 0 0"
   ItemsSource="{Binding Items3}"
   CanUserSortColumns="True"
@@ -23,24 +25,17 @@
   AutoGenerateColumns="False"
   materialDesign:DataGridAssist.CellPadding="13 8 8 8"
   materialDesign:DataGridAssist.ColumnHeaderPadding="8">
+            <DataGrid.ItemContainerStyle>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler ="DataGridRow_MouseDoubleClick"/>
+                </Style>
+            </DataGrid.ItemContainerStyle>
+
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn
-      Binding="{Binding IsSelected}"
-      ElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnStyle}"
-      EditingElementStyle="{StaticResource MaterialDesignDataGridCheckBoxColumnEditingStyle}">
-                    <DataGridCheckBoxColumn.Header>
-                        <!--padding to allow hit test to pass thru for sorting -->
-                        <Border
-          Background="Transparent"
-          Padding="6 0 6 0"
-          HorizontalAlignment="Center">
-                            <CheckBox
-            HorizontalAlignment="Center"
-            DataContext="{Binding RelativeSource={RelativeSource AncestorType={x:Type DataGrid}}, Path=DataContext}"
-            IsChecked="{Binding IsAllItems3Selected}" />
-                        </Border>
-                    </DataGridCheckBoxColumn.Header>
-                </DataGridCheckBoxColumn>
+                <DataGridTextColumn
+      Binding="{Binding Code}"
+      Header="Code"
+      EditingElementStyle="{StaticResource MaterialDesignDataGridTextColumnEditingStyle}" />
                 <DataGridTextColumn
       Binding="{Binding Code}"
       Header="Code"
