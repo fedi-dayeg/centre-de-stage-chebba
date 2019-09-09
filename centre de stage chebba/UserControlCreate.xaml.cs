@@ -24,14 +24,16 @@ namespace centre_de_stage_chebba
     /// </summary>
     public partial class UserControlCreate : UserControl
     {
-        private static string connString = @"Data Source=""../centre.accdb"";
-Provider=""Microsoft.ACE.OLEDB.12.0""; 
-User ID=Admin";
+        
         public UserControlCreate()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// use the crystal report to print the document
+        /// </summary>
+        
+            //TODO they are some bug in the laod, i need to found solution to load the correct path when i publish the project
         public void CrystalReportText()
         {
             MainWindow f1 = new MainWindow();
@@ -124,9 +126,18 @@ User ID=Admin";
             CrystalReportText();
         }
 
+        /// <summary>
+        /// save the data to the database 
+        /// call the method AddOrdre from the conection class 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        
+
+        //TODO  i need to found a solution haw to call the ordre class and use his constructor 
         private void btn_save(object sender, RoutedEventArgs e)
         {
-            Connexion.AddOrdre("INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
+            string sql = "INSERT INTO ajouter(ID,benefice,nom_prenom,sujet,fiche" +
                     ",paimentValide,compteBancaire,sujetVersement," +
                     "beneficeVers,compteBancaireVers,numOredeEchange,classe,lobe,parag," +
                     "paragSecond,numVisa,prixTotale,negation,prixTotalePayer," +
@@ -138,10 +149,11 @@ User ID=Admin";
                     "','" + tx4.Text + "','" + tx40.Text + "','" + tx41.Text + "','" + tx42.Text + "','" + tx15.Text + "','" +
                     tx16.Text + "','" + tx17.Text + "','" + tx20.Text + "','" + tx21.Text + "','" + tx44.Text + "','" +
                     tx28.Text + "','" + tx29.Text + "','" + tx30.Text + "','" + tx45.Text +
-                    "','" + tx33.Text + "')");               
+                    "','" + tx33.Text + "')";
+            Connexion.AddOrdre(sql);               
         }
 
-    
+      // open the second window that contain the DataGrid
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
             search search = new search();

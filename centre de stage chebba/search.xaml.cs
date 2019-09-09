@@ -27,6 +27,8 @@ namespace centre_de_stage_chebba
         {
             string sql = "SELECT* FROM ajouter";
             Connexion.remplirDGV(datagridview, sql);
+            
+
         }
 
         private void DataGridRow_MouseDoubleClick(object sender, MouseButtonEventArgs e)

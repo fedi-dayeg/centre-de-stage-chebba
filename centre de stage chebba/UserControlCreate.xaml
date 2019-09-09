@@ -18,7 +18,7 @@
         <materialDesign:Card.Background>
             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                 <GradientStop Color="Black" Offset="1" />
-                <GradientStop Color="#FF767676" />
+                <GradientStop Color="#FF656CF1" />
             </LinearGradientBrush>
         </materialDesign:Card.Background>
         <Grid>

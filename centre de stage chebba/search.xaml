@@ -17,9 +17,14 @@
     <Grid>
         <DataGrid
             x:Name="datagridview"
-            >
-           
-
+            ItemsSource="{Binding Items3}"
+            CanUserAddRows="False"
+            Margin="0 8 0 0"
+            CanUserDeleteRows="False"
+            materialDesign:DataGridAssist.CellPadding="13 8 8 8"
+            materialDesign:DataGridAssist.ColumnHeaderPadding="8"
+            IsReadOnly="True"
+            >          
         </DataGrid>
     </Grid>
 </Window>

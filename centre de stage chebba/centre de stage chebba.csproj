@@ -137,9 +137,6 @@
     <Compile Include="search.xaml.cs">
       <DependentUpon>search.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SearchControl.xaml.cs">
-      <DependentUpon>SearchControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControlCreate.xaml.cs">
       <DependentUpon>UserControlCreate.xaml</DependentUpon>
     </Compile>
@@ -162,10 +159,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="search.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SearchControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
