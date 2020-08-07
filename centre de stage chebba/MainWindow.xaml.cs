@@ -51,7 +51,7 @@ namespace centre_de_stage_chebba
                     break;
                 case "ItemCreate":
                     usc = new UserControlCreate();
-                    GridMain.Children.Add(usc); 
+                    GridMain.Children.Add(usc);         
                     break;
                 default:
                     break;

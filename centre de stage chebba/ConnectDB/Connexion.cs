@@ -13,12 +13,16 @@ namespace centre_de_stage_chebba
 {
     class Connexion
     {
-      
+
         // get the connection string 
         //PS: i am using the access database
-        private static string connString = @"Data Source=""../centre.accdb"";
-Provider=""Microsoft.ACE.OLEDB.12.0""; 
-User ID=Admin";
+        /* private static string connString = @"Data Source=""../centre.accdb"";
+ Provider=""Microsoft.ACE.OLEDB.12.0""; 
+ User ID=Admin";*/
+
+        private static string connString = @"Provider=Microsoft.ACE.OLEDB.12.0;
+Data Source=" + AppDomain.CurrentDomain.BaseDirectory + "centre.accdb;";
+
         private OleDbConnection conn = new OleDbConnection(connString);
 
         public static OleDbConnection getConn()
@@ -56,6 +60,7 @@ User ID=Admin";
             DataTable dt = new DataTable();
             da.Fill(dt);
             datagridview.ItemsSource = dt.DefaultView;
+            DataColumn id = new DataColumn("الرقم", typeof(string));
             datagridview.Columns[0].Header = "الرقم";
             datagridview.Columns[1].Header = "المستفيد";
             datagridview.Columns[2].Header = "الإسم و اللقب الإجتماعى";
@@ -110,5 +115,29 @@ User ID=Admin";
                 throw new Exception(e.Message);
             }
         }
+
+        /// <summary>
+        /// slect the cell from the datagrid  and add them to the ordre form with increment of the id
+        /// </summary>
+        /// <param name="sql"></param>
+        public static void addDataFromGridView(string sql)
+        {
+            // create the user controle object
+
+            Add addwindow = new Add();
+            
+            OleDbConnection conn = new OleDbConnection(connString);
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+            OleDbCommand command = new OleDbCommand(sql, conn);           
+            int id = Convert.ToInt32(command.ExecuteScalar());
+            int ident = id + 1;
+            MessageBox.Show("req" + id, "eror", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            addwindow.textBox10.Text = Convert.ToString(ident);
+            addwindow.Show();
+            
+            conn.Close();
+
+        }   
     }
 }
